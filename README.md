@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="/node_modules/github-markdown-css/github-markdown.css">
 # Server Side Javascript
 
 
 # Arrays
-```
+```js
 var _ = require('underscore');  // underscore 모듈을 사용할거다~
 var arr = [3, 6, 9, 1, 12];
 ```
