@@ -91,3 +91,25 @@ console.log(4);
 
 // 결과 : 1, (data.txt 내용), 2, 4, 3, (data.txt 내용)
 ```
+
+# express 와 템플릿 엔진을 결합하는 방법
+
+1. ejs , jade, pug 등 사용하려는 템플릿 엔진을 `npm install pug --save` 를 통해 설치한다
+2. 환경설정해주기
+```js
+app.set('views', './views');  // 기본값이기 때문에 생략가능
+app.set('view engine', 'pug');  // jade 템플릿 엔진 세팅과 express를 연결하는 코드
+```
+3. 특정 파일을 불러올때 (참고 : http://jade-lang.com)
+```js
+app.get('/template', function(req, res){
+    res.render('template', {time:Date(), title:'Pug'}); // render 메소드 사용! 파일명 입력(확장자는 생략), { } 여기 안에 넣고싶은 데이터 값 입력가능
+});
+
+```
+
+# 쿼리스트링 (Query String)
+http://a.com/topic?id=1
+
+`topic` : path라고 함  
+`?id=1` : 쿼리스트링(query string)이라고 함
