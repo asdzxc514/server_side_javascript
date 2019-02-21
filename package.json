@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/asdzxc514/server_side_javascript#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "github-markdown-css": "^3.0.1",
     "jade": "^1.11.0",

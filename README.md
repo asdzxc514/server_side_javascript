@@ -113,4 +113,16 @@ app.get('/template', function(req, res){
 http://a.com/topic?id=1
 
 `topic` : path라고 함  
-`?id=1` : 쿼리스트링(query string)이라고 함
+`?id=1 (키:값&키2:값2)` : 쿼리스트링(query string)이라고 함
+
+
+# GET
+- 어떠한 자료를 사용자가 서버에게 요청하면, 서버가 응답해서 사용자에게 가져다 주는 방식
+- 주소(url)를 통한 전송
+- 전송길이 제한
+
+
+# POST
+- 어떠한 자료를 사용자가 서버에게 전송하는 방식
+- header의 body를 통한 전송
+- 길이제한 없음, 약간의 보안
