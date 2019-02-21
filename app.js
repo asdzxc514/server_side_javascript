@@ -16,7 +16,7 @@ app.get('/topic', function(req, res){
         <a href="/topic?id=1">Nodejs</a><br>
         <a href="/topic?id=2">Express</a>
     `;
-    var outer = str + topics[req.query.id]
+    var output = str + topics[req.query.id]
     res.send(output);
 });
 
